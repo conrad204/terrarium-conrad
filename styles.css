@@ -1,10 +1,29 @@
 body {
     font-family: Arial, sans-serif;
+	background-color: #f0f0f0;
 }
 
 h1 {
     color: green;
     text-align:center;
+}
+
+#reset-button {
+	position: fixed;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	top: 13%;
+	padding: 10px 20px;
+	border-radius: 100px;
+	background: green;
+	color: white;
+	font-weight: bold;
+	border-style: none;
+	cursor: pointer;
+}
+
+.reset-button:hover {
+  background-color: rgb(0, 39, 0); /* Darker shade of blue for the pressed state */
 }
 
 .container {
@@ -32,6 +51,9 @@ h1 {
 	height: 100px;
     z-index: 2;
     object-fit: cover;
+	cursor: grab;
+	user-select: none;
+	position: absolute;
 }
 
 .terrarium {
